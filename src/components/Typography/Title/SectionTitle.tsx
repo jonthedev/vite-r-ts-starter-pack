@@ -1,5 +1,9 @@
-const SectionTitle = () => {
-  return <h1>This is a title</h1>
+interface SectionTitleProps {
+  title: string
+}
+
+const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
+  return <h2>{title}</h2>
 }
 
 export default SectionTitle
