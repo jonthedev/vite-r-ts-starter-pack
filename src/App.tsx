@@ -3,8 +3,9 @@ import Hacker from "@src/components/SVGR/Hacker"
 
 function App() {
   return (
-    <div>
-      <SectionTitle title='This is a title' />
+    <div className='App'>
+      <h1>Hello World</h1>
+      <SectionTitle title='This is a title'></SectionTitle>
       <Hacker />
     </div>
   )
