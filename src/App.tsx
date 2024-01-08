@@ -1,4 +1,4 @@
-import SectionTitle from '@components/Typography/Title/SectionTitle'
+import SectionTitle from '@src/components/Typography/Title/SectionTitle'
 import Hacker from '@src/components/SVGR/Hacker'
 
 function App() {
