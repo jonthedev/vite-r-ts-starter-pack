@@ -54,8 +54,7 @@
     "src/**/*.{ts,tsx,css}": [
       "npm run format",
       "npm run lint:fix",
-      "npm run lint",
-      "test"
+      "npm run lint"
     ]
   }
 }

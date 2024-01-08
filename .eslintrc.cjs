@@ -31,7 +31,6 @@ module.exports = {
         tabWidth: 2,
         trailingComma: 'all',
         printWidth: 80,
-        enOfLine: 'lf'
       },
     ],
   },
