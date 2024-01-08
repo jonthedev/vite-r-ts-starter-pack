@@ -5,25 +5,25 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:react-hooks/recommended',
-    'prettier'
+    'prettier',
   ],
   ignorePatterns: [
     'dist',
     '.eslintrc.cjs',
     '*.config.ts',
     '*.config.js',
-    'commitlint.config.cjs'
+    'commitlint.config.cjs',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
-    tsconfigRootDir: __dirname
+    tsconfigRootDir: __dirname,
   },
   plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
-      { allowConstantExport: true }
+      { allowConstantExport: true },
     ],
     'no-unused-vars': 'off',
     'no-console': 'warn',
@@ -35,8 +35,8 @@ module.exports = {
         semi: false,
         useTabs: false,
         tabWidth: 2,
-        trailingComma: 'all'
-      }
-    ]
-  }
+        trailingComma: 'all',
+      },
+    ],
+  },
 }
