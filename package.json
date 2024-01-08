@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "preview": "vite preview",
     "test": "vitest run",
     "test:ui": "vitest --ui",
@@ -49,10 +51,10 @@
     "vitest-dom": "^0.1.1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "eslint",
+    "src/**/*.{ts,tsx,css}": [
+      "npm run format",
+      "npm run lint:fix",
+      "npm run lint",
       "test"
     ]
   }
