@@ -1,4 +1,8 @@
+HUSKY=0 git push
+
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
 git pull -r
+
+

@@ -1,5 +1,6 @@
 {
   "name": "jdev",
+  "author": "Jonathan D Kaonga",
   "private": true,
   "version": "0.0.0",
   "type": "module",
