@@ -1,24 +1,21 @@
-## Introduction
+## vite-r-ts-starter-pack
 
-🥷 Jonathan Kaonga
+👋 Welcome to my Custom Web Development Template by [Jonathan D Kaonga](https://github.com/jonthedev)
 
-🚀 Web / Creative Developer
+This template provides a robust foundation for building modern web applications, leveraging the power and flexibility of popular technologies:
 
-📍 London 🇬🇧 / Amsterdam 🇳🇱
+[Vite](https://vitejs.dev/): A fast and efficient build tool that offers lightning-fast development and optimized production builds.
 
-🌐 https://j-dev.online/
+[React](https://react.dev/): A popular JavaScript library for building user interfaces, enabling you to create interactive and dynamic web applications with ease.
 
----
+[TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that enhances code quality, improves developer productivity, and enables robust type checking and autocompletion features.
 
-## About J Dev
+[Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that enables rapid and responsive UI development by providing a comprehensive set of utility classes for styling elements and components.
 
-This space serves as a online portfolio to showcase some of my projects.
-
-Check my [github readme](https://github.com/jonthedev/jonthedev) for more details about me.
 
 ## Setup
 
-### Prerequisites.
+### Prerequisites
 
 ```terminal
 node : >=18.12.0
@@ -79,7 +76,7 @@ alias: {
 
 Project uses [vitest](https://vitest.dev/) for testing.
 
-All tests can be found in the **src/tests/** directory.
+All tests can be found in the ```/src/tests/``` directory.
 
 1. Run Tests
 
@@ -93,9 +90,7 @@ npm run test
 
 For styling I use [tailwindCSS](https://tailwindcss.com/).
 
-Some styles are abstracted to keep the config size lean.
-
-Check the **src/theme** directory.
+To keep the tailwind config theme lean I suggest abstracting chunks into the ```/src/theme``` directory.
 
 ---
 
@@ -118,7 +113,7 @@ Check the **src/theme** directory.
 
 ### Committing
 
-There is a pre-commit hook that automates the following flow on the **src** directory, before asking for your commit message.
+There is a pre-commit hook that automates the following flow on the ```/src``` directory, before asking for your commit message.
 
 The message must follow the [conventional changelog standard](https://github.com/conventional-changelog/commitlint).
 
@@ -148,6 +143,33 @@ npm run lint
 ```terminal
 npm run test
 ```
+
+---
+
+### Build
+
+Build the application
+
+```terminal
+npm run build
+```
+
+The app is optimized for production by using vite's [chunking strategy](https://vitejs.dev/guide/build).
+
+Check the ```/dist``` folder
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
