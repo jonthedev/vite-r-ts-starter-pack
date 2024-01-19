@@ -12,7 +12,6 @@ This template provides a robust foundation for building modern web applications,
 
 [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that enables rapid and responsive UI development by providing a comprehensive set of utility classes for styling elements and components.
 
-
 ## Setup
 
 ### Prerequisites
@@ -76,7 +75,7 @@ alias: {
 
 Project uses [vitest](https://vitest.dev/) for testing.
 
-All tests can be found in the ```/src/tests/``` directory.
+All tests can be found in the `/src/tests/` directory.
 
 1. Run Tests
 
@@ -90,7 +89,7 @@ npm run test
 
 For styling I use [tailwindCSS](https://tailwindcss.com/).
 
-To keep the tailwind config theme lean I suggest abstracting chunks into the ```/src/theme``` directory.
+To keep the tailwind config theme lean I suggest abstracting chunks into the `/src/theme` directory.
 
 ---
 
@@ -98,11 +97,13 @@ To keep the tailwind config theme lean I suggest abstracting chunks into the ```
 
 [Prettier](https://prettier.io/) - For code formatting.
 
+[Prettier Tailwind](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
+
 [Eslint](https://eslint.org/) - Statically analyzes your code.
 
 [TypeScript-Eslint](https://typescript-eslint.io/) - Enables ESLint and Prettier to support TypeScript.
 
-[LintSstaged](https://github.com/lint-staged/lint-staged) - Run linters against staged git files.
+[Lint Staged](https://github.com/lint-staged/lint-staged) - Run linters against staged git files.
 
 [Commit Lint](https://commitlint.js.org/#/) - Helps your team adhere to a commit convention.
 
@@ -110,13 +111,11 @@ To keep the tailwind config theme lean I suggest abstracting chunks into the ```
 
 ---
 
-
 ### Committing
 
-There is a pre-commit hook that automates the following flow on the ```/src``` directory, before asking for your commit message.
+There is a pre-commit hook that automates the following flow on the `/src` directory and all `ts,tsx` files, before asking for your commit message.
 
 The message must follow the [conventional changelog standard](https://github.com/conventional-changelog/commitlint).
-
 
 You can also run these scripts individually.
 
@@ -156,26 +155,4 @@ npm run build
 
 The app is optimized for production by using vite's [chunking strategy](https://vitejs.dev/guide/build).
 
-Check the ```/dist``` folder
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Check the `/dist` folder
