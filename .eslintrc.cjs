@@ -6,11 +6,10 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:tailwindcss/recommended",
     "prettier",
   ],
   plugins: ["react-refresh", "@typescript-eslint", "prettier", "jsx-a11y"],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "*.config.*"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "*.config.*", ".css"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "./tsconfig.json",
