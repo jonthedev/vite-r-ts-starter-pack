@@ -37,6 +37,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "./src/components"),
       "@db": path.resolve(__dirname, "./src/db"),
       "@theme": path.resolve(__dirname, "./src/theme"),
+      "@types": path.resolve(__dirname, "./src/types"),
     },
   },
   test: {
