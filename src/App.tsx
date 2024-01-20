@@ -1,10 +1,10 @@
-import SectionTitle from "@src/components/Typography/Title/SectionTitle"
+import Button from "./components/Common/Button"
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <SectionTitle title="This is a title"></SectionTitle>
+      <h1>Vite React TypeScript Starter Pack</h1>
+      <Button className="text-amber-600" />
     </div>
   )
 }
